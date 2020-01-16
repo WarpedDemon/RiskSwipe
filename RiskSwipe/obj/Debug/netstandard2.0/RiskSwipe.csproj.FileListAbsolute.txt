@@ -1,0 +1,35 @@
+C:\Users\warpe\source\repos\RiskSwipe\RiskSwipe\RiskSwipe\bin\Debug\netstandard2.0\RiskSwipe.deps.json
+C:\Users\warpe\source\repos\RiskSwipe\RiskSwipe\RiskSwipe\bin\Debug\netstandard2.0\RiskSwipe.dll
+C:\Users\warpe\source\repos\RiskSwipe\RiskSwipe\RiskSwipe\bin\Debug\netstandard2.0\RiskSwipe.pdb
+C:\Users\warpe\source\repos\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\warpe\source\repos\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\warpe\source\repos\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\RiskSwipe.csproj.CoreCompileInputs.cache
+C:\Users\warpe\source\repos\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\RiskSwipe.AssemblyInfoInputs.cache
+C:\Users\warpe\source\repos\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\RiskSwipe.AssemblyInfo.cs
+C:\Users\warpe\source\repos\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\warpe\source\repos\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\RiskSwipe.dll
+C:\Users\warpe\source\repos\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\RiskSwipe.pdb
+C:\Users\warpe\source\repos\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\RiskSwipe.csprojAssemblyReference.cache
+D:\RiskSwipe\RiskSwipe\RiskSwipe\bin\Debug\netstandard2.0\RiskSwipe.deps.json
+D:\RiskSwipe\RiskSwipe\RiskSwipe\bin\Debug\netstandard2.0\RiskSwipe.dll
+D:\RiskSwipe\RiskSwipe\RiskSwipe\bin\Debug\netstandard2.0\RiskSwipe.pdb
+D:\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\RiskSwipe.csproj.CoreCompileInputs.cache
+D:\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\RiskSwipe.AssemblyInfoInputs.cache
+D:\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\RiskSwipe.AssemblyInfo.cs
+D:\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\XamlC.stamp
+D:\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\RiskSwipe.dll
+D:\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\RiskSwipe.pdb
+D:\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\RiskSwipe.csprojAssemblyReference.cache
+I:\The Grand Lexicon\Drive1\RiskSwipe\RiskSwipe\RiskSwipe\bin\Debug\netstandard2.0\RiskSwipe.deps.json
+I:\The Grand Lexicon\Drive1\RiskSwipe\RiskSwipe\RiskSwipe\bin\Debug\netstandard2.0\RiskSwipe.dll
+I:\The Grand Lexicon\Drive1\RiskSwipe\RiskSwipe\RiskSwipe\bin\Debug\netstandard2.0\RiskSwipe.pdb
+I:\The Grand Lexicon\Drive1\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\App.xaml.g.cs
+I:\The Grand Lexicon\Drive1\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+I:\The Grand Lexicon\Drive1\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\RiskSwipe.csproj.CoreCompileInputs.cache
+I:\The Grand Lexicon\Drive1\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\RiskSwipe.AssemblyInfoInputs.cache
+I:\The Grand Lexicon\Drive1\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\RiskSwipe.AssemblyInfo.cs
+I:\The Grand Lexicon\Drive1\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\XamlC.stamp
+I:\The Grand Lexicon\Drive1\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\RiskSwipe.dll
+I:\The Grand Lexicon\Drive1\RiskSwipe\RiskSwipe\RiskSwipe\obj\Debug\netstandard2.0\RiskSwipe.pdb

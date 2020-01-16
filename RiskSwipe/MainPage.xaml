@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RiskSwipe"
+             x:Class="RiskSwipe.MainPage">
+
+    <StackLayout>
+        <Label Text="RISK"/>
+        <Label x:Name="turn" Text="Turn: Red"/>
+        <Button x:Name="EndTurn" Text="End Turn" Clicked="EndTurn_Clicked"/>
+        
+        <Grid x:Name="controlGrid" RowSpacing="4" ColumnSpacing="4">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <BoxView x:Name="Box0" Grid.Row="0" Grid.Column="0" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped0"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped0"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped0"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped0"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="0" Grid.Column="0" x:Name="Box0Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            
+            <BoxView x:Name="Box1" Grid.Row="0" Grid.Column="1" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped1"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped1"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped1"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped1"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="0" Grid.Column="1" x:Name="Box1Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            
+            <BoxView x:Name="Box2" Grid.Row="0" Grid.Column="2" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped2"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped2"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped2"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped2"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="0" Grid.Column="2" x:Name="Box2Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            
+            <BoxView x:Name="Box3" Grid.Row="0" Grid.Column="3" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped3"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped3"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped3"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped3"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="0" Grid.Column="3" x:Name="Box3Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            
+            <BoxView x:Name="Box4" Grid.Row="0" Grid.Column="4" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped4"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped4"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped4"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped4"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="0" Grid.Column="4" x:Name="Box4Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            
+            <BoxView x:Name="Box5" Grid.Row="1" Grid.Column="0" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped5"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped5"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped5"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped5"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="1" Grid.Column="0" x:Name="Box5Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            
+            <BoxView x:Name="Box6" Grid.Row="1" Grid.Column="1" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped6"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped6"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped6"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped6"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="1" Grid.Column="1" x:Name="Box6Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            
+            <BoxView x:Name="Box7" Grid.Row="1" Grid.Column="2" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped7"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped7"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped7"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped7"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="1" Grid.Column="2" x:Name="Box7Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+            <BoxView x:Name="Box8" Grid.Row="1" Grid.Column="3" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped8"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped8"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped8"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped8"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="1" Grid.Column="3" x:Name="Box8Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+            <BoxView x:Name="Box9" Grid.Row="1" Grid.Column="4" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped9"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped9"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped9"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped9"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="1" Grid.Column="4" x:Name="Box9Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            
+            <BoxView x:Name="Box10" Grid.Row="2" Grid.Column="0" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped10"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped10"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped10"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped10"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="2" Grid.Column="0" x:Name="Box10Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+            <BoxView x:Name="Box11" Grid.Row="2" Grid.Column="1" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped11"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped11"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped11"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped11"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="2" Grid.Column="1" x:Name="Box11Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            
+            <BoxView x:Name="Box12" Grid.Row="2" Grid.Column="2" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped12"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped12"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped12"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped12"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="2" Grid.Column="2" x:Name="Box12Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+            <BoxView x:Name="Box13" Grid.Row="2" Grid.Column="3" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped13"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped13"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped13"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped13"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="2" Grid.Column="3" x:Name="Box13Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+            <BoxView x:Name="Box14" Grid.Row="2" Grid.Column="4" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped14"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped14"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped14"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped14"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="2" Grid.Column="4" x:Name="Box14Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+            <BoxView x:Name="Box15" Grid.Row="3" Grid.Column="0" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped15"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped15"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped15"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped15"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="3" Grid.Column="0" x:Name="Box15Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+            <BoxView x:Name="Box16" Grid.Row="3" Grid.Column="1" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped16"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped16"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped16"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped16"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="3" Grid.Column="1" x:Name="Box16Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+            <BoxView x:Name="Box17" Grid.Row="3" Grid.Column="2" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped17"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped17"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped17"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped17"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="3" Grid.Column="2" x:Name="Box17Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+            <BoxView x:Name="Box18" Grid.Row="3" Grid.Column="3" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped18"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped18"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped18"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped18"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="3" Grid.Column="3" x:Name="Box18Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+            <BoxView x:Name="Box19" Grid.Row="3" Grid.Column="4" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped19"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped19"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped19"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped19"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="3" Grid.Column="4" x:Name="Box19Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+            <BoxView x:Name="Box20" Grid.Row="4" Grid.Column="0" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped20"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped20"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped20"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped20"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="4" Grid.Column="0" x:Name="Box20Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+            <BoxView x:Name="Box21" Grid.Row="4" Grid.Column="1" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped21"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped21"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped21"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped21"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="4" Grid.Column="1" x:Name="Box21Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+            <BoxView x:Name="Box22" Grid.Row="4" Grid.Column="2" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped22"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped22"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped22"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped22"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="4" Grid.Column="2" x:Name="Box22Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+            <BoxView x:Name="Box23" Grid.Row="4" Grid.Column="3" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped23"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped23"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped23"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped23"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="4" Grid.Column="3" x:Name="Box23Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+            <BoxView x:Name="Box24" Grid.Row="4" Grid.Column="4" Color="Teal" WidthRequest="300" HeightRequest="300" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <BoxView.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped24"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped24"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped24"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped24"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Label Grid.Row="4" Grid.Column="4" x:Name="Box24Units" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>
